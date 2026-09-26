@@ -571,128 +571,128 @@
     }
 
     // ===== Team Data =====
-    const teamMembers = [
-      {
-        id: 1,
-        image: "https://i.postimg.cc/Vv7Z8trd/image.png",
-        title: " عصام عبد العظيم كامل",
-        subtitle: "Co-Founder / شريك مؤسس",
-        handle: "@essam_abdelazim",
-        borderColor: "#EF4444",
-        gradient: "linear-gradient(195deg, #EF4444, #000)",
-        phone: "+20 12 23218448",
-        email: "ceo@naelee.tech",
-        description: "النشاط انظمت تكيف الهواء لكفت التطبقات، يمتلك خبرة استراتيجية واسعة في إدارة وتطوير الأعمال، وقيادة التوسع في السوق وتنمية الاستثمارات وضمان استدامة التميز المؤسسي."
-      },
-      {
-        id: 2,
-        image: "https://i.postimg.cc/sDKCjnG8/image.png",
-        title: " محمد صلاح",
-        subtitle: "مدير عام التصميمات والمشروعات الكبرى والتطوير",
-        handle: "@eng_mohamed_salah",
-        borderColor: "#EC4899",
-        gradient: "linear-gradient(210deg, #EC4899, #000)",
-        phone: "+20 1008050322",
-        email: "info@naelee.tech",
-        description: "مدير عام التصميمات والمشروعات الكبرى والتطوير، يقود فريق التصميم الهندسي والإشراف على تنفيذ المشروعات الكبرى، مع التركيز على الابتكار والتطوير المستمر ورفع كفاءة الأداء المؤسسي."
-      },
-      {
-        id: 3,
-        image: "https://i.postimg.cc/SN53xjfw/image.png",
-        title: " عادل فيصل",
-        subtitle: "المدير العام لشركة نيو إير",
-        handle: "@eng_adel_faisal",
-        borderColor: "#8B5CF6",
-        gradient: "linear-gradient(225deg, #8B5CF6, #000)",
-        phone: "+20 10 03433312",
-        email: "info@naelee.tech",
-        description: "المدير العام لشركة نيو إير إيجيبت، يتولى الإشراف الإداري والتنفيذي العام على كافة القطاعات التشغيلية والفنية، مع التركيز على أعلى معايير الجودة والابتكار والتنمية والتدريب المستدام."
-      },
-      {
-        id: 4,
-        image: "https://i.postimg.cc/PJBZYf0M/image.png",
-        title: " عبد الرحمن أحمد الطيب",
-        subtitle: "مطوّر واجهات أمامية وتقنية المعلومات",
-        handle: "@abdelrahman_altayeb",
-        borderColor: "#3B82F6",
-        gradient: "linear-gradient(145deg, #3B82F6, #000)",
-        phone: "+20 1120362974",
-        email: "abdelrahman@newair-eg.com",
-        description: "مهندس واجهات المستخدم وتقنية المعلومات، المسؤول الأول عن تطوير وبناء وتأمين الموقع الإلكتروني، وابتكار واجهات تفاعلية ذكية وسريعة تمنح المستخدم أفضل تجربة تصفح."
-      },
-      {
-        id: 5,
-        image: "https://i.postimg.cc/bY7d85Pg/image.png",
-        title: " وسام عصام",
-        subtitle: "عضو فريق العمل",
-        handle: "@wessam_essam",
-        borderColor: "#F59E0B",
-        gradient: "linear-gradient(165deg, #F59E0B, #000)",
-        phone: "+20 10 11526604",
-        email: "sales@naelee.tech",
-        description: "بعضو بارز في فريق العمل، يساهم في دعم وتطوير المبادرات الاستراتيجية وتطوير الأعمال، مع ضمان تحقيق أعلى مستويات الكفاءة والجودة بجوب البحر الاحمر"
-      },
-      {
-        id: 6,
-        image: "https://i.postimg.cc/zfxrxx8d/image.png",
-        title: " محمد السباعي",
-        subtitle: "شركة سيزماتكس (Sismatics)",
-        handle: "@dr_mohamed_elsebaey",
-        borderColor: "#06B6D4",
-        gradient: "linear-gradient(200deg, #06B6D4, #000)",
-        phone: "+20 10 00214131",
-        email: "tech@naelee.tech",
-        description: "دكتور ومتخصص في مجال الأنظمة الذكية والأتمتة، يقود شركة سيزماتكس المتخصصة في الحلول التقنية المتقدمة وأنظمة التحكم الذكي، مع خبرة واسعة في تطوير البنية التحتية التقنية للمشروعات الكبرى."
-      },
-      {
-        id: 7,
-        image: "https://i.postimg.cc/x1987bGs/image.png",
-        title: " عمرو الصافي",
-        subtitle: "مدير المبيعات (Sales Director)",
-        handle: "@eng_amr",
-        borderColor: "#10B981",
-        gradient: "linear-gradient(180deg, #10B981, #000)",
-        phone: "+20 11 14898319",
-        email: "sales@naelee.tech",
-        description: "مدير قطاع المبيعات والتسويق، مسؤول عن قيادة استراتيجيات المبيعات، وبناء العلاقات الاستراتيجية المستدامة مع العملاء، وتحقيق مستهدفات النمو والتوسع للاربع قطعات بمجموعه."
-      },
-      {
-        id: 8,
-        image: "https://i.postimg.cc/BnQs2WGt/image.png",
-        title: " عبد الحميد فاروق",
-        subtitle: "أنظمة التحكم والأتمتة والطاقة الكهربائية",
-        handle: "@eng_abdelhamid_farouk",
-        borderColor: "#F97316",
-        gradient: "linear-gradient(170deg, #F97316, #000)",
-        phone: "+20 11 44404610",
-        email: "tech@naelee.tech",
-        description: "مهندس متخصص في أنظمة التحكم والأتمتة والطاقة الكهربائية، يتولى الإشراف على تصميم وتنفيذ أنظمة التحكم الذكي ومشروعات الطاقة الكهربائية، مع التركيز على أعلى معايير تفير الطاقه والسلامه اولن السلامة والكفاءة التشغيلية."
-      },
-      {
-        id: 9,
-        image: "https://i.postimg.cc/rpPX9wF6/image.png",
-        title: " عبد الحميد سلامة",
-        subtitle: "تقني (Tech)",
-        handle: "@eng_abd_alhamid_salama",
-        borderColor: "#EC4899",
-        gradient: "linear-gradient(210deg, #EC4899, #000)",
-        phone: "+20 11 44404918",
-        email: "tech@naelee.tech",
-        description: "مهندس تقني متخصص، يساهم في تنفيذ المشروعات التقنية والإشراف على الجوانب الفنية، مع التركيز على الابتكار والتطوير المستمر ورفع كفاءة الأداء التشغيلي."
-      },
-      {
-        id: 10,
-        image: "https://i.postimg.cc/d0zS3ZY8/image.png",
-        title: "شركة سيزماتكس",
-        subtitle: "شريك تقني (Sismatics)",
-        handle: "@Sismatics",
-        borderColor: "#06B6D4",
-        gradient: "linear-gradient(200deg, #06B6D4, #000)",
-        phone: "+20 10 00214131",
-        email: "tech@naelee.tech",
-        description: "شركة سيزماتكس المتخصصة في الأنظمة الذكية والأتمتة والحلول التقنية المتقدمة، وأنظمة التحكم الذكي، مع خبرة واسعة في تطوير البنية التحتية التقنية للمشروعات الكبرى."
-      }
-    ];
+   const teamMembers = [
+  {
+    id: 1,
+    image: "https://i.postimg.cc/Vv7Z8trd/image.png",
+    title: " عصام عبد العظيم كامل",
+    subtitle: "Co-Founder / شريك مؤسس",
+    handle: "@essam_abdelazim",
+    borderColor: "#EF4444",
+    gradient: "linear-gradient(195deg, #EF4444, #000)",
+    phone: "+20 12 23218448",
+    email: "ceo@naelee.tech",
+    description: "النشاط انظمت تكيف الهواء لكفت التطبقات، يمتلك خبرة استراتيجية واسعة في إدارة وتطوير الأعمال، وقيادة التوسع في السوق وتنمية الاستثمارات وضمان استدامة التميز المؤسسي."
+  },
+  {
+    id: 2,
+    image: "https://i.postimg.cc/x1987bGs/image.png",
+    title: " عمرو الصافي",
+    subtitle: "مدير المبيعات (Sales Director)",
+    handle: "@eng_amr",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
+    phone: "+20 11 14898319",
+    email: "sales@naelee.tech",
+    description: "مدير قطاع المبيعات والتسويق، مسؤول عن قيادة استراتيجيات المبيعات، وبناء العلاقات الاستراتيجية المستدامة مع العملاء، وتحقيق مستهدفات النمو والتوسع للاربع قطعات بمجموعه."
+  },
+  {
+    id: 3,
+    image: "https://i.postimg.cc/rpPX9wF6/image.png",
+    title: " عبد الحميد سلامة",
+    subtitle: "تقني (Tech)",
+    handle: "@eng_abd_alhamid_salama",
+    borderColor: "#EC4899",
+    gradient: "linear-gradient(210deg, #EC4899, #000)",
+    phone: "+20 11 44404918",
+    email: "tech@naelee.tech",
+    description: "مهندس تقني متخصص، يساهم في تنفيذ المشروعات التقنية والإشراف على الجوانب الفنية، مع التركيز على الابتكار والتطوير المستمر ورفع كفاءة الأداء التشغيلي."
+  },
+  {
+    id: 4,
+    image: "https://i.postimg.cc/BnQs2WGt/image.png",
+    title: " عبد الحميد فاروق",
+    subtitle: "أنظمة التحكم والأتمتة والطاقة الكهربائية",
+    handle: "@eng_abdelhamid_farouk",
+    borderColor: "#F97316",
+    gradient: "linear-gradient(170deg, #F97316, #000)",
+    phone: "+20 11 44404610",
+    email: "tech@naelee.tech",
+    description: "مهندس متخصص في أنظمة التحكم والأتمتة والطاقة الكهربائية، يتولى الإشراف على تصميم وتنفيذ أنظمة التحكم الذكي ومشروعات الطاقة الكهربائية، مع التركيز على أعلى معايير تفير الطاقه والسلامه اولن السلامة والكفاءة التشغيلية."
+  },
+  {
+    id: 5,
+    image: "https://i.postimg.cc/SN53xjfw/image.png",
+    title: " عادل فيصل",
+    subtitle: "المدير العام لشركة نيو إير",
+    handle: "@eng_adel_faisal",
+    borderColor: "#8B5CF6",
+    gradient: "linear-gradient(225deg, #8B5CF6, #000)",
+    phone: "+20 10 03433312",
+    email: "info@naelee.tech",
+    description: "المدير العام لشركة نيو إير إيجيبت، يتولى الإشراف الإداري والتنفيذي العام على كافة القطاعات التشغيلية والفنية، مع التركيز على أعلى معايير الجودة والابتكار والتنمية والتدريب المستدام."
+  },
+  {
+    id: 6,
+    image: "https://i.postimg.cc/bY7d85Pg/image.png",
+    title: " وسام عصام",
+    subtitle: "عضو فريق العمل",
+    handle: "@wessam_essam",
+    borderColor: "#F59E0B",
+    gradient: "linear-gradient(165deg, #F59E0B, #000)",
+    phone: "+20 10 11526604",
+    email: "sales@naelee.tech",
+    description: "بعضو بارز في فريق العمل، يساهم في دعم وتطوير المبادرات الاستراتيجية وتطوير الأعمال، مع ضمان تحقيق أعلى مستويات الكفاءة والجودة بجوب البحر الاحمر"
+  },
+  {
+    id: 7,
+    image: "https://i.postimg.cc/zfxrxx8d/image.png",
+    title: " محمد السباعي",
+    subtitle: "شركة سيزماتكس (Sismatics)",
+    handle: "@dr_mohamed_elsebaey",
+    borderColor: "#06B6D4",
+    gradient: "linear-gradient(200deg, #06B6D4, #000)",
+    phone: "+20 10 00214131",
+    email: "tech@naelee.tech",
+    description: "دكتور ومتخصص في مجال الأنظمة الذكية والأتمتة، يقود شركة سيزماتكس المتخصصة في الحلول التقنية المتقدمة وأنظمة التحكم الذكي، مع خبرة واسعة في تطوير البنية التحتية التقنية للمشروعات الكبرى."
+  },
+  {
+    id: 8,
+    image: "https://i.postimg.cc/PJBZYf0M/image.png",
+    title: " عبد الرحمن أحمد الطيب",
+    subtitle: "مطوّر واجهات أمامية وتقنية المعلومات",
+    handle: "@abdelrahman_altayeb",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    phone: "+20 1120362974",
+    email: "abdelrahman@newair-eg.com",
+    description: "مهندس واجهات المستخدم وتقنية المعلومات، المسؤول الأول عن تطوير وبناء وتأمين الموقع الإلكتروني، وابتكار واجهات تفاعلية ذكية وسريعة تمنح المستخدم أفضل تجربة تصفح."
+  },
+  {
+    id: 9,
+    image: "https://i.postimg.cc/sDKCjnG8/image.png",
+    title: " محمد صلاح",
+    subtitle: "مدير عام التصميمات والمشروعات الكبرى والتطوير",
+    handle: "@eng_mohamed_salah",
+    borderColor: "#EC4899",
+    gradient: "linear-gradient(210deg, #EC4899, #000)",
+    phone: "+20 1008050322",
+    email: "info@naelee.tech",
+    description: "مدير عام التصميمات والمشروعات الكبرى والتطوير، يقود فريق التصميم الهندسي والإشراف على تنفيذ المشروعات الكبرى، مع التركيز على الابتكار والتطوير المستمر ورفع كفاءة الأداء المؤسسي."
+  },
+  {
+    id: 10,
+    image: "https://i.postimg.cc/d0zS3ZY8/image.png",
+    title: "شركة سيزماتكس",
+    subtitle: "شريك تقني (Sismatics)",
+    handle: "@Sismatics",
+    borderColor: "#06B6D4",
+    gradient: "linear-gradient(200deg, #06B6D4, #000)",
+    phone: "+20 10 00214131",
+    email: "tech@naelee.tech",
+    description: "شركة سيزماتكس المتخصصة في الأنظمة الذكية والأتمتة والحلول التقنية المتقدمة، وأنظمة التحكم الذكي، مع خبرة واسعة في تطوير البنية التحتية التقنية للمشروعات الكبرى."
+  }
+];
 
     const chromaGrid = document.getElementById('chromaGrid');
     const gridContainer = document.getElementById('gridContainer');
