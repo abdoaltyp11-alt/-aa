@@ -202,7 +202,7 @@
     }
 
     .chroma-contact-item {
-      display: flex; align-items: center; gap: 0.4rem;
+      display: flex; align-items: flex-start; gap: 0.4rem;
       font-size: 0.7rem; color: #94a3b8;
       transition: color 0.2s ease; text-decoration: none;
       min-width: 0; padding: 0.15rem 0; border-radius: 6px;
@@ -226,8 +226,10 @@
     .chroma-contact-item span:last-child {
       direction: ltr; text-align: left;
       font-family: system-ui, -apple-system, sans-serif;
-      letter-spacing: 0.01em; overflow: hidden;
-      text-overflow: ellipsis; white-space: nowrap; min-width: 0;
+      letter-spacing: 0.01em; overflow: visible;
+      text-overflow: clip; white-space: normal; min-width: 0;
+      word-break: break-word; overflow-wrap: anywhere;
+      line-height: 1.35;
     }
 
     .chroma-overlay, .chroma-fade {
@@ -411,8 +413,10 @@
     .modal-contact-card .contact-value {
       font-size: 0.72rem; font-weight: 600; color: #e2e8f0;
       direction: ltr; text-align: left;
-      white-space: nowrap; overflow: hidden;
-      text-overflow: ellipsis; transition: color 0.2s ease;
+      white-space: normal; overflow: visible;
+      text-overflow: clip; overflow-wrap: anywhere;
+      word-break: break-word; line-height: 1.35;
+      transition: color 0.2s ease;
     }
     @media (min-width: 640px) {
       .modal-contact-card .contact-value { font-size: 0.8rem; }
